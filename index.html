@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Responsive</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="flex flex-col justify-between min-h-screen">
+    <header class="bg-red-500 text-center p-4 mb-5">
+      <h1 class="text-white font-bold text-xl">
+        Selamat Datang di Perpustakaan XYZ
+      </h1>
+    </header>
+    <main class="container px-4 m-auto">
+      <div class="grid md:grid-cols-4 md:gap-5 mx-auto">
+        <!-- Left -->
+        <div class="p-5">
+          <div class="border border-1 rounded-lg shadow-sm hover:shadow-md">
+            <h5 class="text-center text-lg">Menu</h5>
+            <ul class="p-5 text-center">
+              <li class="mb-6">
+                <a
+                  class="text-sm bg-red-500 px-5 py-2 rounded-xl text-white hover:bg-blue-500 hover:ease-in-out duration-700"
+                  >Login</a
+                >
+              </li>
+              <li class="mb-6">
+                <a
+                  class="text-sm bg-red-500 px-5 py-2 rounded-xl text-white hover:bg-blue-500 hover:ease-in-out duration-700"
+                  >Home</a
+                >
+              </li>
+              <li class="mb-6">
+                <button
+                  class="text-sm bg-red-500 px-5 py-2 rounded-xl text-white hover:bg-blue-500 hover:ease-in-out duration-700"
+                >
+                  <a class="">Daftar Buku</a>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Mid -->
+        <div
+          class="border border-1 rounded-lg shadow-sm hover:shadow-md md:col-span-2"
+        >
+          <div class="mx-3">
+            <h5 class="text-center text-lg">Berita</h5>
+            <p class="text-center mb-3">Membuat Desain Web Responsive</p>
+            <img src="berita.jpg" />
+            <div class="my-5">
+              <a class="text-gray-500 hover:text-black">Baca Selengkapnya >></a>
+            </div>
+          </div>
+        </div>
+        <!-- right -->
+        <div class="p-5">
+          <div
+            class="border border-1 rounded-lg shadow-sm hover:shadow-md items-center"
+          >
+            <h5 class="text-center text-lg">Buku Terpopuler</h5>
+            <ul class="p-5 text-center">
+              <li class="mb-6">
+                <button
+                  class="text-sm bg-red-500 px-5 py-2 rounded-xl text-white hover:bg-blue-500 hover:ease-in-out duration-700"
+                >
+                  <a>Web Desain</a>
+                </button>
+              </li>
+              <li class="mb-6">
+                <button
+                  class="text-sm bg-red-500 text-center px-2 py-2 rounded-xl text-white hover:bg-blue-500 hover:ease-in-out duration-700"
+                >
+                  <a>Pemrograman</a>
+                </button>
+              </li>
+              <li class="mb-6">
+                <button
+                  class="text-center text-sm bg-red-500 px-5 py-2 rounded-xl text-white hover:bg-blue-500 hover:ease-in-out duration-700"
+                >
+                  <a>Database</a>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="bg-gray-100 text-center p-3">
+        <h5 class="font-bold text-gray-500">
+          Copyright &copy; 2022 Noval Mahardhika
+        </h5>
+      </div>
+    </footer>
+  </body>
+</html>
